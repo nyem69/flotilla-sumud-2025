@@ -1,0 +1,14 @@
+[
+  {
+    "timestamp": "2025-10-02T12:08:36+08:00",
+    "total_vessels": 44,
+    "summary": {
+      "sailing": 27,
+      "intercepted": 17,
+      "docked": 0,
+      "anchored": 0,
+      "unknown": 0,
+      "most_recent_update": "2025-10-02 12:08:36"
+    }
+  }
+]
