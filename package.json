@@ -6,7 +6,10 @@
   "scripts": {
     "start": "node src/main.js",
     "scrape": "node src/scraper.js",
+    "process": "node src/data_processor.js",
+    "email": "node src/email_sender.js",
     "schedule": "node scheduler.js",
+    "schedule:now": "node scheduler.js --now",
     "test": "jest",
     "test:watch": "jest --watch"
   },

@@ -3,10 +3,11 @@ require('dotenv').config();
 const config = {
   // Email configuration
   smtp: {
-    server: process.env.SMTP_SERVER || 'smtp.gmail.com',
-    port: parseInt(process.env.SMTP_PORT) || 587,
-    username: process.env.SMTP_USERNAME,
-    password: process.env.SMTP_PASSWORD,
+    host: process.env.SMTP_HOST || 'smtp.resend.com',
+    port: parseInt(process.env.SMTP_PORT) || 465,
+    apiKey: process.env.RESEND_API_KEY,
+    senderEmail: process.env.SMTP_SENDER_EMAIL || 'admin@manamurah.com',
+    senderName: process.env.SMTP_SENDER_NAME || 'ManaMurah',
     recipient: process.env.RECIPIENT_EMAIL || 'azmi@aga.my'
   },
 
@@ -31,8 +32,9 @@ const config = {
 // Validate required configuration
 function validateConfig() {
   const required = [
-    { key: 'SMTP_USERNAME', value: config.smtp.username },
-    { key: 'SMTP_PASSWORD', value: config.smtp.password }
+    { key: 'RESEND_API_KEY', value: config.smtp.apiKey },
+    { key: 'SMTP_SENDER_EMAIL', value: config.smtp.senderEmail },
+    { key: 'RECIPIENT_EMAIL', value: config.smtp.recipient }
   ];
 
   const missing = required.filter(item => !item.value);

@@ -10,5 +10,17 @@
       "unknown": 0,
       "most_recent_update": "2025-10-02 12:08:36"
     }
+  },
+  {
+    "timestamp": "2025-10-02T12:54:51+08:00",
+    "total_vessels": 44,
+    "summary": {
+      "sailing": 25,
+      "intercepted": 19,
+      "docked": 0,
+      "anchored": 0,
+      "unknown": 0,
+      "most_recent_update": "2025-10-02 12:43:00"
+    }
   }
 ]
