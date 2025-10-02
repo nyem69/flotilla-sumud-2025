@@ -7,8 +7,10 @@ Automated monitoring and hourly reporting system for the Global Sumud Flotilla v
 - 🚢 **Automated Vessel Tracking**: Scrapes 44 vessels from the Global Sumud Flotilla website
 - ⏰ **Hourly Reports**: Automatically generates and emails reports every hour
 - 🌏 **Timezone Conversion**: Converts all timestamps from UTC to Malaysia Time (UTC+8)
+- 📍 **Distance Calculation**: Calculates distance to Gaza for each vessel in nautical miles
 - 📊 **Data Sorting**: Organizes vessels by most recent update
 - 📧 **Beautiful Email Reports**: Professional HTML emails with color-coded vessel statuses
+- 🎯 **Smart Filtering**: Automatically filters out incidents and non-vessel entries
 - 💾 **Historical Data**: Maintains complete history of all vessel updates
 - 🔄 **Retry Logic**: Automatic retry with exponential backoff for resilience
 - 📝 **Comprehensive Logging**: Detailed logs for debugging and monitoring
@@ -105,13 +107,15 @@ The scheduler will:
   "id": 1,
   "name": "Adagio",
   "location": "Beit Hanoun",
-  "status": "SAILING",
+  "status": "INTERCEPTED",
   "last_update_utc": "2025-10-02T01:43:00.000Z",
   "last_update_myt": "2025-10-02T09:43:00+08:00",
   "last_update_myt_display": "2025-10-02 09:43:00",
   "speed": "6.59 knots",
   "position": "31.5946, 33.5379",
-  "course": "90°"
+  "course": "90°",
+  "distance_to_gaza_nm": 47.0,
+  "distance_to_gaza": "47 nm"
 }
 ```
 
@@ -150,6 +154,7 @@ This project uses [Resend](https://resend.com) for email delivery via SMTP.
 - **HTML Template**: Professional design with color-coded statuses
 - **Plain Text Fallback**: Full compatibility with all email clients
 - **Responsive Design**: Optimized for desktop and mobile viewing
+- **Distance Information**: Shows distance to Gaza in nautical miles for each vessel
 - **Color Coding**:
   - 🟢 Green = SAILING
   - 🔴 Red = INTERCEPTED
@@ -203,6 +208,8 @@ The system includes robust error handling:
 - **Timeout Handling**: Configurable timeouts for all operations
 - **Graceful Degradation**: Continues operation even if some vessels fail
 - **Failure Tracking**: Monitors consecutive failures
+- **Smart Filtering**: Automatically excludes incidents and non-vessel entries from scraping
+- **Status Normalization**: Maps "assumed intercepted" to "INTERCEPTED" for consistency
 - **Comprehensive Logging**: All errors logged with context
 
 ## Production Deployment

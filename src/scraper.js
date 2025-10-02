@@ -34,7 +34,7 @@ async function scrapeVessels() {
     // Find all vessel row containers - they contain cursor-pointer and have vessel data
     const vesselRows = await page.locator('div[class*="cursor-pointer"]:has(button)').all();
 
-    logger.info(`Found ${vesselRows.length} vessel rows`);
+    logger.info(`Found ${vesselRows.length} potential rows (vessels + incidents)`);
 
     const vessels = [];
 
@@ -76,12 +76,28 @@ async function scrapeVessels() {
         const vesselData = extractVesselDataFromText(expandedText, i + 1);
 
         if (vesselData && vesselData.name) {
-          // Filter out incidents (they have "Attack" in the name)
-          if (!vesselData.name.toLowerCase().includes('attack') &&
-              !vesselData.name.toLowerCase().includes('incident')) {
+          logger.info(`Row ${i + 1}: Found "${vesselData.name}" - Status: ${vesselData.status}, Has position: ${!!vesselData.position}`);
+
+          // Filter out incidents using multiple criteria:
+          // 1. Name contains "Attack" or "Incident"
+          // 2. Name ends with a status word (like "Captain Nikos Intercepted")
+          // 3. Doesn't have vessel-specific data (position, speed, course) - incidents don't have these
+          const nameL = vesselData.name.toLowerCase();
+          const hasVesselData = vesselData.position || vesselData.speed || vesselData.course;
+
+          const isIncident = nameL.includes('attack') ||
+                           nameL.includes('incident') ||
+                           nameL.match(/\s+(intercepted|sailing|docked)$/) || // Name ends with status
+                           !hasVesselData; // No vessel-specific data
+
+          if (!isIncident) {
             vessels.push(vesselData);
-            logger.debug(`Extracted: ${vesselData.name} - ${vesselData.status}`);
+            logger.info(`✓ Accepted: ${vesselData.name}`);
+          } else {
+            logger.info(`✗ Filtered: ${vesselData.name} (${!hasVesselData ? 'no vessel data' : 'incident pattern'})`);
           }
+        } else {
+          logger.warn(`Row ${i + 1}: No vessel data extracted`);
         }
 
         // Collapse it back to avoid clutter
@@ -158,9 +174,10 @@ function extractVesselDataFromText(text, index) {
         continue;
       }
 
-      // Extract status
-      if (/^(sailing|intercepted|docked|anchored)$/i.test(line)) {
-        status = line.toUpperCase();
+      // Extract status (including multi-word statuses like "ASSUMED INTERCEPTED")
+      if (/^(sailing|intercepted|docked|anchored|assumed\s+intercepted)$/i.test(line)) {
+        // Normalize "ASSUMED INTERCEPTED" to "INTERCEPTED"
+        status = line.toUpperCase().includes('INTERCEPTED') ? 'INTERCEPTED' : line.toUpperCase();
         continue;
       }
 

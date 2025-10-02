@@ -6,6 +6,69 @@ const { createLogger } = require('./logger');
 
 const logger = createLogger('processor');
 
+// Gaza coordinates (approximate center)
+const GAZA_COORDS = { lat: 31.5, lon: 34.45 };
+
+/**
+ * Calculate distance between two coordinates using Haversine formula
+ * @param {number} lat1 - Latitude of point 1
+ * @param {number} lon1 - Longitude of point 1
+ * @param {number} lat2 - Latitude of point 2
+ * @param {number} lon2 - Longitude of point 2
+ * @returns {number} Distance in nautical miles
+ */
+function calculateDistance(lat1, lon1, lat2, lon2) {
+  const R = 3440.065; // Earth's radius in nautical miles
+  const dLat = toRadians(lat2 - lat1);
+  const dLon = toRadians(lon2 - lon1);
+
+  const a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+            Math.cos(toRadians(lat1)) * Math.cos(toRadians(lat2)) *
+            Math.sin(dLon / 2) * Math.sin(dLon / 2);
+
+  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  const distance = R * c;
+
+  return Math.round(distance * 10) / 10; // Round to 1 decimal place
+}
+
+/**
+ * Convert degrees to radians
+ * @param {number} degrees - Angle in degrees
+ * @returns {number} Angle in radians
+ */
+function toRadians(degrees) {
+  return degrees * (Math.PI / 180);
+}
+
+/**
+ * Parse position string and calculate distance to Gaza
+ * @param {string} position - Position string in format "lat, lon"
+ * @returns {Object} Distance info object
+ */
+function calculateDistanceToGaza(position) {
+  if (!position) {
+    return { distance_nm: null, distance_display: null };
+  }
+
+  try {
+    const [lat, lon] = position.split(',').map(s => parseFloat(s.trim()));
+
+    if (isNaN(lat) || isNaN(lon)) {
+      return { distance_nm: null, distance_display: null };
+    }
+
+    const distance = calculateDistance(lat, lon, GAZA_COORDS.lat, GAZA_COORDS.lon);
+    return {
+      distance_nm: distance,
+      distance_display: `${distance} nm`
+    };
+  } catch (error) {
+    logger.warn(`Error calculating distance for position ${position}: ${error.message}`);
+    return { distance_nm: null, distance_display: null };
+  }
+}
+
 /**
  * Processes raw vessel data: converts timestamps, sorts, and structures data
  * @param {Array} vessels - Raw vessel data from scraper
@@ -18,6 +81,7 @@ function processVesselData(vessels) {
   const processedVessels = vessels.map((vessel, index) => {
     const lastUpdateUTC = parseTimestamp(vessel.last_update_utc);
     const lastUpdateMYT = convertToMalaysiaTime(lastUpdateUTC);
+    const distanceInfo = calculateDistanceToGaza(vessel.position);
 
     return {
       id: vessel.id || index + 1,
@@ -29,7 +93,9 @@ function processVesselData(vessels) {
       last_update_myt_display: lastUpdateMYT.format('YYYY-MM-DD HH:mm:ss'),
       speed: vessel.speed || null,
       position: vessel.position || null,
-      course: vessel.course || null
+      course: vessel.course || null,
+      distance_to_gaza_nm: distanceInfo.distance_nm,
+      distance_to_gaza: distanceInfo.distance_display
     };
   });
 

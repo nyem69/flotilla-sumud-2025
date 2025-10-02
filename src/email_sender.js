@@ -34,6 +34,7 @@ function generateVesselRows(vessels) {
     const speed = vessel.speed || '-';
     const position = vessel.position || '-';
     const course = vessel.course || '-';
+    const distance = vessel.distance_to_gaza || '-';
 
     return `
         <tr>
@@ -43,6 +44,7 @@ function generateVesselRows(vessels) {
             <td><span class="status ${statusClass}">${vessel.status}</span></td>
             <td>${vessel.last_update_myt_display}</td>
             <td>${speed}</td>
+            <td>${distance}</td>
             <td>${position}</td>
             <td>${course}</td>
         </tr>`;
@@ -60,15 +62,17 @@ function generateVesselTextRows(vessels) {
     const speed = vessel.speed || 'N/A';
     const position = vessel.position || 'N/A';
     const course = vessel.course || 'N/A';
+    const distance = vessel.distance_to_gaza || 'N/A';
 
     return `
 ${index + 1}. ${vessel.name}
-   Location:    ${location}
-   Status:      ${vessel.status}
-   Last Update: ${vessel.last_update_myt_display}
-   Speed:       ${speed}
-   Position:    ${position}
-   Course:      ${course}
+   Location:       ${location}
+   Status:         ${vessel.status}
+   Last Update:    ${vessel.last_update_myt_display}
+   Speed:          ${speed}
+   Distance:       ${distance}
+   Position:       ${position}
+   Course:         ${course}
 `;
   }).join('\n');
 }
