@@ -2,6 +2,12 @@
 
 Automated monitoring and hourly reporting system for the Global Sumud Flotilla vessel tracking website.
 
+## Email Report Example
+
+![Email Report Example](Flotilla-Sumud-Report-20251002-120836-MYT.png)
+
+*Example of hourly email report showing vessel tracking with distance to Gaza*
+
 ## Features
 
 - 🚢 **Automated Vessel Tracking**: Scrapes 44 vessels from the Global Sumud Flotilla website
