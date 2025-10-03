@@ -22,5 +22,161 @@
       "unknown": 0,
       "most_recent_update": "2025-10-02 12:43:00"
     }
+  },
+  {
+    "timestamp": "2025-10-02T13:10:03+08:00",
+    "total_vessels": 44,
+    "summary": {
+      "sailing": 24,
+      "intercepted": 20,
+      "docked": 0,
+      "anchored": 0,
+      "unknown": 0,
+      "most_recent_update": "2025-10-02 13:03:00"
+    }
+  },
+  {
+    "timestamp": "2025-10-02T14:01:29+08:00",
+    "total_vessels": 45,
+    "summary": {
+      "sailing": 23,
+      "intercepted": 21,
+      "docked": 0,
+      "anchored": 0,
+      "unknown": 1,
+      "most_recent_update": "2025-10-02 14:01:28"
+    }
+  },
+  {
+    "timestamp": "2025-10-02T15:01:30+08:00",
+    "total_vessels": 45,
+    "summary": {
+      "sailing": 23,
+      "intercepted": 21,
+      "docked": 0,
+      "anchored": 0,
+      "unknown": 1,
+      "most_recent_update": "2025-10-02 15:01:29"
+    }
+  },
+  {
+    "timestamp": "2025-10-02T16:01:33+08:00",
+    "total_vessels": 45,
+    "summary": {
+      "sailing": 13,
+      "intercepted": 21,
+      "docked": 0,
+      "anchored": 0,
+      "unknown": 11,
+      "most_recent_update": "2025-10-02 16:01:33"
+    }
+  },
+  {
+    "timestamp": "2025-10-02T16:20:03+08:00",
+    "total_vessels": 44,
+    "summary": {
+      "sailing": 4,
+      "intercepted": 40,
+      "docked": 0,
+      "anchored": 0,
+      "unknown": 0,
+      "most_recent_update": "2025-10-02 16:12:00"
+    }
+  },
+  {
+    "timestamp": "2025-10-02T17:01:34+08:00",
+    "total_vessels": 43,
+    "summary": {
+      "sailing": 4,
+      "intercepted": 39,
+      "docked": 0,
+      "anchored": 0,
+      "unknown": 0,
+      "most_recent_update": "2025-10-02 16:52:00"
+    }
+  },
+  {
+    "timestamp": "2025-10-02T18:01:29+08:00",
+    "total_vessels": 44,
+    "summary": {
+      "sailing": 4,
+      "intercepted": 40,
+      "docked": 0,
+      "anchored": 0,
+      "unknown": 0,
+      "most_recent_update": "2025-10-02 17:52:00"
+    }
+  },
+  {
+    "timestamp": "2025-10-03T11:01:26+08:00",
+    "total_vessels": 42,
+    "summary": {
+      "sailing": 1,
+      "intercepted": 41,
+      "docked": 0,
+      "anchored": 0,
+      "unknown": 0,
+      "most_recent_update": "2025-10-03 10:07:00"
+    }
+  },
+  {
+    "timestamp": "2025-10-03T12:01:26+08:00",
+    "total_vessels": 42,
+    "summary": {
+      "sailing": 1,
+      "intercepted": 41,
+      "docked": 0,
+      "anchored": 0,
+      "unknown": 0,
+      "most_recent_update": "2025-10-03 11:07:00"
+    }
+  },
+  {
+    "timestamp": "2025-10-03T13:01:26+08:00",
+    "total_vessels": 42,
+    "summary": {
+      "sailing": 1,
+      "intercepted": 41,
+      "docked": 0,
+      "anchored": 0,
+      "unknown": 0,
+      "most_recent_update": "2025-10-03 12:07:00"
+    }
+  },
+  {
+    "timestamp": "2025-10-03T14:01:25+08:00",
+    "total_vessels": 42,
+    "summary": {
+      "sailing": 1,
+      "intercepted": 41,
+      "docked": 0,
+      "anchored": 0,
+      "unknown": 0,
+      "most_recent_update": "2025-10-03 13:07:00"
+    }
+  },
+  {
+    "timestamp": "2025-10-03T15:01:25+08:00",
+    "total_vessels": 42,
+    "summary": {
+      "sailing": 1,
+      "intercepted": 41,
+      "docked": 0,
+      "anchored": 0,
+      "unknown": 0,
+      "most_recent_update": "2025-10-03 14:07:00"
+    }
+  },
+  {
+    "timestamp": "2025-10-03T16:01:26+08:00",
+    "total_vessels": 42,
+    "summary": {
+      "sailing": 0,
+      "intercepted": 42,
+      "docked": 0,
+      "anchored": 0,
+      "unknown": 0,
+      "most_recent_update": "2025-10-03 15:07:00"
+    }
   }
 ]

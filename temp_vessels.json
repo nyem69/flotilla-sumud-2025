@@ -1,0 +1,442 @@
+[
+  {
+    "id": 1,
+    "name": "Adagio",
+    "location": "Beit Hanoun",
+    "status": "SAILING",
+    "last_update_utc": "2 Oct 2025 01:43 UTC",
+    "speed": "6.59 knots",
+    "position": "31.5946, 33.5379",
+    "course": "90°"
+  },
+  {
+    "id": 2,
+    "name": "Adara",
+    "location": "Beit Lahia",
+    "status": "INTERCEPTED",
+    "last_update_utc": "2 Oct 2025 02:40 UTC",
+    "speed": "5.99 knots",
+    "position": "31.7398, 33.4956",
+    "course": "90°"
+  },
+  {
+    "id": 3,
+    "name": "Ahed Tamimi",
+    "location": null,
+    "status": "SAILING",
+    "last_update_utc": "1 Oct 2025 21:22 UTC",
+    "speed": "4.32 knots",
+    "position": "31.7374, 33.2305",
+    "course": "112.5°"
+  },
+  {
+    "id": 4,
+    "name": "All In",
+    "location": "Khan Yunis",
+    "status": "INTERCEPTED",
+    "last_update_utc": "2 Oct 2025 01:02 UTC",
+    "speed": "2.70 knots",
+    "position": "31.6579, 33.5138",
+    "course": "112.5°"
+  },
+  {
+    "id": 5,
+    "name": "Allakatalla",
+    "location": "Rafah",
+    "status": "SAILING",
+    "last_update_utc": "1 Oct 2025 17:33 UTC",
+    "speed": "5.99 knots",
+    "position": "31.8923, 32.8916",
+    "course": "112.5°"
+  },
+  {
+    "id": 6,
+    "name": "Alma",
+    "location": "Deir al-Balah",
+    "status": "INTERCEPTED",
+    "last_update_utc": "1 Oct 2025 16:06 UTC",
+    "speed": "4.32 knots",
+    "position": "31.9026, 32.8465",
+    "course": "135°"
+  },
+  {
+    "id": 7,
+    "name": "Amsterdam",
+    "location": "Al Tantura",
+    "status": "SAILING",
+    "last_update_utc": "1 Oct 2025 17:27 UTC",
+    "speed": "4.32 knots",
+    "position": "31.8745, 32.8900",
+    "course": "135°"
+  },
+  {
+    "id": 8,
+    "name": "Aurora",
+    "location": "Heidi sails to Gaza",
+    "status": "INTERCEPTED",
+    "last_update_utc": "1 Oct 2025 19:41 UTC",
+    "speed": "4.32 knots",
+    "position": "31.7942, 33.1170",
+    "course": "112.5°"
+  },
+  {
+    "id": 9,
+    "name": "Australe",
+    "location": null,
+    "status": "SAILING",
+    "last_update_utc": "2 Oct 2025 02:43 UTC",
+    "speed": "2.70 knots",
+    "position": "31.6176, 33.5901",
+    "course": "157.5°"
+  },
+  {
+    "id": 10,
+    "name": "Captain Nikos",
+    "location": "Akka",
+    "status": "SAILING",
+    "last_update_utc": "2 Oct 2025 03:44 UTC",
+    "speed": "5.45 knots",
+    "position": "31.6852, 33.4993",
+    "course": "112.5°"
+  },
+  {
+    "id": 11,
+    "name": "Catalina",
+    "location": "Al Khalil",
+    "status": "SAILING",
+    "last_update_utc": "2 Oct 2025 00:20 UTC",
+    "speed": "5.45 knots",
+    "position": "31.6755, 33.4462",
+    "course": "135°"
+  },
+  {
+    "id": 12,
+    "name": "Dir yassine",
+    "location": "Deir Yassine",
+    "status": "INTERCEPTED",
+    "last_update_utc": "1 Oct 2025 18:07 UTC",
+    "speed": "4.91 knots",
+    "position": "31.8616, 32.9497",
+    "course": "112.5°"
+  },
+  {
+    "id": 13,
+    "name": "Estrella Y Manuel",
+    "location": "Al Lydd",
+    "status": "SAILING",
+    "last_update_utc": "1 Oct 2025 22:54 UTC",
+    "speed": "3.50 knots",
+    "position": "31.7120, 33.3422",
+    "course": "60°"
+  },
+  {
+    "id": 14,
+    "name": "Fair Lady",
+    "location": "Al Quds",
+    "status": "SAILING",
+    "last_update_utc": "2 Oct 2025 03:02 UTC",
+    "speed": "2.16 knots",
+    "position": "31.7546, 33.0475",
+    "course": "112.5°"
+  },
+  {
+    "id": 15,
+    "name": "Florida",
+    "location": "Anas al Sharif",
+    "status": "SAILING",
+    "last_update_utc": "2 Oct 2025 01:12 UTC",
+    "speed": "5.99 knots",
+    "position": "31.6876, 33.4822",
+    "course": "90°"
+  },
+  {
+    "id": 16,
+    "name": "Free Willy",
+    "location": "Tala - Gaza city",
+    "status": "SAILING",
+    "last_update_utc": "2 Oct 2025 01:46 UTC",
+    "speed": "4.91 knots",
+    "position": "31.6562, 33.5507",
+    "course": "112.5°"
+  },
+  {
+    "id": 17,
+    "name": "Grande Blu",
+    "location": "Ariha",
+    "status": "INTERCEPTED",
+    "last_update_utc": "1 Oct 2025 17:45 UTC",
+    "speed": "4.32 knots",
+    "position": "31.8591, 32.9489",
+    "course": "112.5°"
+  },
+  {
+    "id": 18,
+    "name": "Hio",
+    "location": "Beit Lahm",
+    "status": "INTERCEPTED",
+    "last_update_utc": "2 Oct 2025 03:23 UTC",
+    "speed": "4.91 knots",
+    "position": "31.7251, 33.5584",
+    "course": "22.5°"
+  },
+  {
+    "id": 19,
+    "name": "Huga",
+    "location": "Haifa",
+    "status": "INTERCEPTED",
+    "last_update_utc": "1 Oct 2025 17:34 UTC",
+    "speed": "5.99 knots",
+    "position": "31.8730, 32.9148",
+    "course": "135°"
+  },
+  {
+    "id": 20,
+    "name": "Inana",
+    "location": "Jenin",
+    "status": "SAILING",
+    "last_update_utc": "2 Oct 2025 00:11 UTC",
+    "speed": "1.62 knots",
+    "position": "31.6762, 33.4283",
+    "course": "112.5°"
+  },
+  {
+    "id": 21,
+    "name": "Jeannot III",
+    "location": "Nablus",
+    "status": "SAILING",
+    "last_update_utc": "1 Oct 2025 22:25 UTC",
+    "speed": "4.32 knots",
+    "position": "31.7216, 33.3073",
+    "course": "90°"
+  },
+  {
+    "id": 22,
+    "name": "Karma",
+    "location": "Yafa",
+    "status": "INTERCEPTED",
+    "last_update_utc": "2 Oct 2025 03:43 UTC",
+    "speed": "6.59 knots",
+    "position": "31.6497, 33.6482",
+    "course": "90°"
+  },
+  {
+    "id": 23,
+    "name": "Mango",
+    "location": "Hind - Tel al Hawa - Gaza",
+    "status": "SAILING",
+    "last_update_utc": "1 Oct 2025 21:23 UTC",
+    "speed": "4.91 knots",
+    "position": "31.7349, 33.2386",
+    "course": "90°"
+  },
+  {
+    "id": 24,
+    "name": "Maria Cristina",
+    "location": "Tulkarem",
+    "status": "SAILING",
+    "last_update_utc": "1 Oct 2025 19:03 UTC",
+    "speed": "4.91 knots",
+    "position": "31.8168, 33.0548",
+    "course": "112.5°"
+  },
+  {
+    "id": 25,
+    "name": "Marinette",
+    "location": "Safad",
+    "status": "SAILING",
+    "last_update_utc": "2 Oct 2025 03:57 UTC",
+    "speed": "5.45 knots",
+    "position": "32.2530, 31.2640",
+    "course": "112.5°"
+  },
+  {
+    "id": 26,
+    "name": "Meteque",
+    "location": "Qalqilya",
+    "status": "SAILING",
+    "last_update_utc": "1 Oct 2025 20:19 UTC",
+    "speed": "2.16 knots",
+    "position": "31.7758, 33.1708",
+    "course": "112.5°"
+  },
+  {
+    "id": 27,
+    "name": "MiaMia",
+    "location": "Beit Sahur",
+    "status": "SAILING",
+    "last_update_utc": "2 Oct 2025 02:55 UTC",
+    "speed": "5.45 knots",
+    "position": "31.6370, 33.6474",
+    "course": "135°"
+  },
+  {
+    "id": 28,
+    "name": "Mikeno",
+    "location": "Al Bireh",
+    "status": "SAILING",
+    "last_update_utc": "1 Oct 2025 22:23 UTC",
+    "speed": "1.62 knots",
+    "position": "31.7247, 33.3072",
+    "course": "45°"
+  },
+  {
+    "id": 29,
+    "name": "Mohammad Bhar",
+    "location": null,
+    "status": "INTERCEPTED",
+    "last_update_utc": "2 Oct 2025 02:43 UTC",
+    "speed": "4.32 knots",
+    "position": "31.6367, 33.6162",
+    "course": "22.5°"
+  },
+  {
+    "id": 30,
+    "name": "Morgana",
+    "location": "Nuseirat",
+    "status": "INTERCEPTED",
+    "last_update_utc": "1 Oct 2025 22:53 UTC",
+    "speed": "3.24 knots",
+    "position": "31.7054, 33.3326",
+    "course": "45°"
+  },
+  {
+    "id": 31,
+    "name": "Ohwayla",
+    "location": "Al Sawafir",
+    "status": "SAILING",
+    "last_update_utc": "2 Oct 2025 00:57 UTC",
+    "speed": "4.91 knots",
+    "position": "31.6614, 33.5067",
+    "course": "112.5°"
+  },
+  {
+    "id": 32,
+    "name": "Otaria",
+    "location": "Bir al Sabe'",
+    "status": "INTERCEPTED",
+    "last_update_utc": "1 Oct 2025 17:31 UTC",
+    "speed": "3.24 knots",
+    "position": "31.8639, 32.9318",
+    "course": "90°"
+  },
+  {
+    "id": 33,
+    "name": "Oxygono",
+    "location": "Osdood",
+    "status": "INTERCEPTED",
+    "last_update_utc": "1 Oct 2025 17:26 UTC",
+    "speed": "3.78 knots",
+    "position": "31.8786, 32.9062",
+    "course": "135°"
+  },
+  {
+    "id": 34,
+    "name": "Paola I",
+    "location": "Tabariyya",
+    "status": "SAILING",
+    "last_update_utc": "1 Oct 2025 23:44 UTC",
+    "speed": "3.24 knots",
+    "position": "31.7279, 33.3567",
+    "course": "45°"
+  },
+  {
+    "id": 35,
+    "name": "Pavlos Fyssas",
+    "location": "Tantura",
+    "status": "SAILING",
+    "last_update_utc": "2 Oct 2025 01:17 UTC",
+    "speed": "6.59 knots",
+    "position": "31.6468, 33.5253",
+    "course": "112.5°"
+  },
+  {
+    "id": 36,
+    "name": "Selvaggia",
+    "location": "Beisan",
+    "status": "SAILING",
+    "last_update_utc": "1 Oct 2025 17:24 UTC",
+    "speed": "4.91 knots",
+    "position": "31.8721, 32.9116",
+    "course": "135°"
+  },
+  {
+    "id": 37,
+    "name": "Seulle",
+    "location": "Kaysariyah",
+    "status": "INTERCEPTED",
+    "last_update_utc": "1 Oct 2025 23:40 UTC",
+    "speed": "3.78 knots",
+    "position": "31.6930, 33.3743",
+    "course": "135°"
+  },
+  {
+    "id": 38,
+    "name": "Shireen",
+    "location": null,
+    "status": "SAILING",
+    "last_update_utc": "2 Oct 2025 03:53 UTC",
+    "speed": "4.32 knots",
+    "position": "32.8877, 32.5704",
+    "course": "22.5°"
+  },
+  {
+    "id": 39,
+    "name": "Sirius",
+    "location": "Askalan",
+    "status": "INTERCEPTED",
+    "last_update_utc": "1 Oct 2025 17:06 UTC",
+    "speed": "4.91 knots",
+    "position": "31.8696, 32.9119",
+    "course": "135°"
+  },
+  {
+    "id": 40,
+    "name": "Spectre",
+    "location": "Tabariya",
+    "status": "INTERCEPTED",
+    "last_update_utc": "1 Oct 2025 17:50 UTC",
+    "speed": "4.32 knots",
+    "position": "31.8617, 32.9334",
+    "course": "135°"
+  },
+  {
+    "id": 41,
+    "name": "Summertime - Jong",
+    "location": "Al Shajarah",
+    "status": "SAILING",
+    "last_update_utc": "2 Oct 2025 04:02 UTC",
+    "speed": "8.26 knots",
+    "position": "33.5174, 32.3247",
+    "course": "0°"
+  },
+  {
+    "id": 42,
+    "name": "Vangelis Pissias - Asser et Ayssel",
+    "location": null,
+    "status": "SAILING",
+    "last_update_utc": "2 Oct 2025 01:24 UTC",
+    "speed": "1.08 knots",
+    "position": "31.6401, 33.5266",
+    "course": "202.5°"
+  },
+  {
+    "id": 43,
+    "name": "Wahoo",
+    "location": "Sham - Jabaliya - Gaza",
+    "status": "SAILING",
+    "last_update_utc": "2 Oct 2025 02:27 UTC",
+    "speed": "3.78 knots",
+    "position": "31.6653, 33.5902",
+    "course": "112.5°"
+  },
+  {
+    "id": 44,
+    "name": "Yulara",
+    "location": "Yata",
+    "status": "INTERCEPTED",
+    "last_update_utc": "1 Oct 2025 17:47 UTC",
+    "speed": "5.45 knots",
+    "position": "31.8530, 32.9753",
+    "course": "112.5°"
+  }
+]
